@@ -1,6 +1,7 @@
 function Home() {
   return (
     <>
+
         <div
           id="carouselExampleInterval"
           className="carousel slide-fluid"
@@ -10,21 +11,22 @@ function Home() {
             <div className="carousel-item active" data-bs-interval="10000">
               <img
                 src="public/empresa.webp"
-                className="d-block w-100  img-fluid rounded"
+                className="d-block w-100 h-50  img-fluid rounded" 
+          
                 alt="ACN"
               />
             </div>
             <div className="carousel-item" data-bs-interval="2000">
               <img
                 src="public/empresa.webp"
-                className="d-block w-100"
+                className="d-block w-100 h-50"
                 alt="ACN"
               />
             </div>
             <div className="carousel-item">
               <img
                 src="public/empresa.webp"
-                className="d-block w-100"
+                className="d-block  h-50"
                 alt="ACN"
               />
             </div>
@@ -67,11 +69,59 @@ function Home() {
               </div>
               <div className="card-body">
                 <p className="card-text">
-                  Dora, a Aventureira, começou como uma coelha chamada Nina em
-                  um projeto inspirado em jogos de PC. A personagem virou uma
-                  menina humana por causa de debates sobre representatividade
-                  latina. O desenho ensina idiomas e incentiva a participação do
-                  público infantil
+                 Conheça nosso portfólio de serviços e descubra como podemos transformar seu projeto em realidade. Oferecemos soluções completas em metalurgia, alumínio, vidraçaria e pré-moldados, garantindo qualidade, segurança e durabilidade em cada etapa do processo.
+                </p>
+              </div>
+              <div className="card-footer">
+                <div className="d-grid gap-2">
+                  <a
+                    href="https://dora.fandom.com/wiki/Lost_and_Found"
+                    className="btn btn-primary active"
+                    aria-current="page"
+                  >
+                    Saiba Mais
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col card">
+              <div className="card-header">
+                <img
+                  src="Public/empresa.webp"
+                  className="card-img-top"
+                  alt="ACN"
+                />
+                <h2 className="card-title">Portfólio de Serviços</h2>
+              </div>
+              <div className="card-body">
+                <p className="card-text">
+                 Conheça nosso portfólio de serviços e descubra como podemos transformar seu projeto em realidade. Oferecemos soluções completas em metalurgia, alumínio, vidraçaria e pré-moldados, garantindo qualidade, segurança e durabilidade em cada etapa do processo.
+                </p>
+              </div>
+              <div className="card-footer">
+                <div className="d-grid gap-2">
+                  <a
+                    href="https://dora.fandom.com/wiki/Lost_and_Found"
+                    className="btn btn-primary active"
+                    aria-current="page"
+                  >
+                    Saiba Mais
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col card">
+              <div className="card-header">
+                <img
+                  src="Public/empresa.webp"
+                  className="card-img-top"
+                  alt="ACN"
+                />
+                <h2 className="card-title">Portfólio de Serviços</h2>
+              </div>
+              <div className="card-body">
+                <p className="card-text">
+                 Conheça nosso portfólio de serviços e descubra como podemos transformar seu projeto em realidade. Oferecemos soluções completas em metalurgia, alumínio, vidraçaria e pré-moldados, garantindo qualidade, segurança e durabilidade em cada etapa do processo.
                 </p>
               </div>
               <div className="card-footer">
@@ -88,6 +138,8 @@ function Home() {
             </div>
           </div>
         </div>
+
+        
 
         <div>
           <div className="card">
