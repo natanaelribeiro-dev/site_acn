@@ -1,10 +1,42 @@
 import { useState } from "react";
-
-function Home() {
-  const [showmodal, setShowModal] = useState(false);
+function Carosel() {
+      const [showmodal, setShowModal] = useState(false);
   return (
     <>
-      <div
+
+
+
+
+<div className="bg-light min-vh-100 d-flex align-items-center py-5">
+  <div className="container">
+    <div className="row align-items-center flex-row-reverse gy-4">
+      <div className="col-12 col-lg-5 text-center">
+        <img
+          src="public/empresa.webp"
+          alt="Hero image"
+          className="img-fluid rounded-3 shadow-lg"
+          style={{ maxWidth: "384px" }}
+        />
+      </div>
+      <div className="col-12 col-lg-7">
+        <h1 className="display-4 fw-bold">DJES Metalúrgica e Pré-Moldados</h1>
+        <p className="py-3 fs-5 text-secondary">
+          Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+          quasi. In deleniti eaque aut repudiandae et a id nisi.
+        </p>
+        
+
+        <button type="button" className="btn" style={{ backgroundColor: "#ff7700", color: "white" }}>
+            Faça seu orçamento
+          </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+      <section
         id="carouselExampleInterval"
         className="carousel slide-fluid"
         data-bs-ride="carousel"
@@ -56,8 +88,8 @@ function Home() {
           ></span>
           <span className="visually-hidden">Next</span>
         </button>
-      </div>
-      <div className="container py-4 g-2">
+      </section>
+      <section className="container py-4 g-2">
         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4">
           <div className="col">
             <div className="card h-100">
@@ -187,98 +219,9 @@ function Home() {
             </div>
           </div>
         </div>
-      </div>
-
-      <div>
-        <div className="card">
-          <div className="card-header">
-            <h2>Sobre Nós</h2>
-          </div>
-          <div className="card-body">
-            <h5 className="card-title"></h5>
-            <p className="card-text">
-              Soluções completas em metalurgia, alumínio, vidraçaria e
-              pré-moldados A ACN Metalúrgica e Pré-Moldados atua em Pato Branco
-              PR, oferecendo soluções completas para projetos residenciais,
-              comerciais e industriais. Nosso trabalho une **qualidade,
-              segurança, durabilidade e acabamento profissional**, buscando
-              atender às necessidades de cada cliente. Trabalhamos com uma ampla
-              variedade de serviços e produtos, incluindo **estruturas
-              metálicas, portões, grades, coberturas, fachadas em ACM, motores
-              eletrônicos para portões, vidros temperados, esquadrias de
-              alumínio, calhas, rufos, funilaria e pré-moldados**. Cada projeto
-              é desenvolvido com atenção aos detalhes e compromisso com um
-              resultado de qualidade. Valorizamos o **atendimento
-              personalizado**, buscando entender o que cada cliente precisa e
-              oferecer uma solução adequada ao seu projeto. ### Nosso
-              compromisso Na ACN, acreditamos que um bom serviço vai além da
-              execução. Por isso, trabalhamos para entregar **soluções
-              resistentes, funcionais e com excelente acabamento**, mantendo o
-              compromisso com a satisfação de nossos clientes. **ACN Metalúrgica
-              e Pré-Moldados — qualidade e confiança para transformar seu
-              projeto em realidade.**
-            </p>
-          </div>
-        </div>
-      </div>
-
-      {showmodal && (
-        <>
-          <div
-            className="modal"
-            tabIndex={-1}
-            role="dialog"
-            style={{ display: "block" }}
-          >
-            <div className="modal-dialog">
-              <div className="modal-content">
-                <div className="modal-header">
-                  <h5 className="modal-title">Portfólio de Serviços</h5>
-                  <button
-                    type="button"
-                    className="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div className="modal-body">
-                  <p className="modal-body-text">
-                    Conheça nosso portfólio de serviços e descubra como podemos
-                    transformar seu projeto em realidade. Oferecemos soluções
-                    completas em metalurgia, alumínio, vidraçaria e
-                    pré-moldados, garantindo qualidade, segurança e durabilidade
-                    em cada etapa do processo.
-                  </p>
-                </div>
-                <div className="modal-footer">
-                  <button
-                    type="button"
-                    className="btn btn-secondary"
-                    data-bs-dismiss="modal"
-                    onClick={() => setShowModal(false)}
-                  >
-                    Close
-                  </button>
-                  <button
-                    type="button"
-                    className="btn btn-primary"
-                    onClick={() =>
-                      window.open(
-                        "https://api.whatsapp.com/send/?phone=%2B5546991297137&text&type=phone_number&app_absent=0",
-                        "_blank",
-                      )
-                    }
-                  >
-                    Fale Conosco
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </>
-      )}
+      </section>
     </>
   );
 }
 
-export default Home;
+export default Carosel;
