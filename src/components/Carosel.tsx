@@ -1,94 +1,40 @@
 import { useState } from "react";
 function Carosel() {
-      const [showmodal, setShowModal] = useState(false);
+  const [showmodal, setShowModal] = useState(false);
   return (
     <>
+      <div className="bg-light min-vh-100 d-flex align-items-center py-5">
+        <div className="container">
+          <div className="row align-items-center flex-row-reverse gy-4">
+            <div className="col-12 col-lg-5 text-center">
+              <img
+                src="public/empresa.webp"
+                alt="Hero image"
+                className="img-fluid rounded-3 shadow-lg"
+                style={{ maxWidth: "384px" }}
+              />
+            </div>
+            <div className="col-12 col-lg-7">
+              <h1 className="display-4 fw-bold">
+                DJES Metalúrgica e Pré-Moldados
+              </h1>
+              <p className="py-3 fs-5 text-secondary">
+                Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                assumenda excepturi exercitationem quasi. In deleniti eaque aut
+                repudiandae et a id nisi.
+              </p>
 
-
-
-
-<div className="bg-light min-vh-100 d-flex align-items-center py-5">
-  <div className="container">
-    <div className="row align-items-center flex-row-reverse gy-4">
-      <div className="col-12 col-lg-5 text-center">
-        <img
-          src="public/empresa.webp"
-          alt="Hero image"
-          className="img-fluid rounded-3 shadow-lg"
-          style={{ maxWidth: "384px" }}
-        />
-      </div>
-      <div className="col-12 col-lg-7">
-        <h1 className="display-4 fw-bold">DJES Metalúrgica e Pré-Moldados</h1>
-        <p className="py-3 fs-5 text-secondary">
-          Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-          quasi. In deleniti eaque aut repudiandae et a id nisi.
-        </p>
-        
-
-        <button type="button" className="btn" style={{ backgroundColor: "#ff7700", color: "white" }}>
-            Faça seu orçamento
-          </button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-      <section
-        id="carouselExampleInterval"
-        className="carousel slide-fluid"
-        data-bs-ride="carousel"
-      >
-        <div className="carousel-inner">
-          <div className="carousel-item active" data-bs-interval="10000">
-            <img
-              src="public/empresa.webp"
-              className="d-block w-100 h-50  img-fluid rounded"
-              alt="ACN"
-            />
-          </div>
-          <div className="carousel-item" data-bs-interval="2000">
-            <img
-              src="public/empresa.webp"
-              className="d-block w-100 h-50"
-              alt="ACN"
-            />
-          </div>
-          <div className="carousel-item">
-            <img
-              src="public/empresa.webp"
-              className="d-block  h-50"
-              alt="ACN"
-            />
+              <button
+                type="button"
+                className="btn"
+                style={{ backgroundColor: "#ff7700", color: "white" }}
+              >
+                Faça seu orçamento
+              </button>
+            </div>
           </div>
         </div>
-        <button
-          className="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleInterval"
-          data-bs-slide="prev"
-        >
-          <span
-            className="carousel-control-prev-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button
-          className="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleInterval"
-          data-bs-slide="next"
-        >
-          <span
-            className="carousel-control-next-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Next</span>
-        </button>
-      </section>
+      </div>
       <section className="container py-4 g-2">
         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4">
           <div className="col">
