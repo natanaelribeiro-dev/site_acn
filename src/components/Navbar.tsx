@@ -1,8 +1,8 @@
         function Navbar() {
   return (
     <>
-      <header className="container-fluid">
-        <nav className="navbar navbar-expand-lg bg-body-tertiary theme-navbar">
+      <header className="w-100 p-0">
+        <nav className="navbar navbar-expand-lg bg-body-tertiary theme-navbar w-100">
           <button type="button" className="btn theme-button">
             DJSES
           </button>
@@ -62,7 +62,7 @@
               </li>
             </ul>  
           </div>
-          <a className="whasts whasts:hover " href="https://wa.me/5546991264244" target="_blank" title="Chame no whatsapp!" id="bt-areadocliente">
+          <a className="whasts" href="https://wa.me/5546991264244" target="_blank" title="Chame no whatsapp!" id="bt-areadocliente">
 						<i className="bi bi-whatsapp"></i>
             <span className="elementor-button-content-wrapper"></span>
 						<span className="elementor-button-icon elementor-align-icon-left">

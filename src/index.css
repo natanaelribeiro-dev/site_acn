@@ -1,6 +1,6 @@
 :root {
   color-scheme: light;
-
+  --bs-body-bg: #fcf5f5 !important;
   --color-brand: #e85d04;
   --color-brand-hover: #c94d03;
   --color-on-brand: #ffffff;
@@ -113,6 +113,11 @@ body {
 .theme-navbar .navbar-nav .nav-link,
 .theme-navbar .navbar-brand {
   color: var(--color-text) !important;
+}
+
+.theme-navbar {
+  border: 0 !important;
+  box-sizing: border-box;
 }
 
 .theme-navbar .navbar-nav .nav-link:hover,
@@ -246,9 +251,9 @@ code {
     cursor: pointer;
     text-decoration: none;
     font-size: 16px;
-    border: 1px solid #3df306;
+    border: 0;
     border-radius: 50px;
-    color: #fbfbfc;
+    color: #f3f5f7;
     line-height: 16px;
     overflow: hidden;
     padding: 16px 28px;

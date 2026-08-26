@@ -1,6 +1,4 @@
-import { useState } from "react";
 function Carosel() {
-  const [showmodal, setShowModal] = useState(false);
   return (
     <>
       <div className="theme-surface min-vh-100 d-flex align-items-center py-5">
@@ -26,8 +24,7 @@ function Carosel() {
 
               <button
                 type="button"
-                className="btn"
-                className="theme-button"
+                className="btn theme-button"
               >
                 Faça seu orçamento
               </button>
@@ -59,7 +56,6 @@ function Carosel() {
               <div className="card-footer">
                 <div className="d-grid gap-2">
                   <a
-                    onClick={() => setShowModal(true)}
                     className="btn btn-primary active"
                     aria-current="page"
                   >
@@ -92,7 +88,6 @@ function Carosel() {
               <div className="card-footer">
                 <div className="d-grid gap-2">
                   <a
-                    onClick={() => setShowModal(true)}
                     className="btn btn-primary active"
                     aria-current="page"
                   >
@@ -123,7 +118,6 @@ function Carosel() {
             <div className="card-footer">
               <div className="d-grid gap-2">
                 <a
-                  onClick={() => setShowModal(true)}
                   className="btn btn-primary active"
                   aria-current="page"
                 >
@@ -154,7 +148,6 @@ function Carosel() {
               <div className="card-footer">
                 <div className="d-grid gap-2">
                   <a
-                    onClick={() => setShowModal(true)}
                     className="btn btn-primary active"
                     aria-current="page"
                   >

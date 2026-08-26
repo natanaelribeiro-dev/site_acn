@@ -1,6 +1,4 @@
-import { useState } from "react";
 function Hero() {
-  const [showmodal, setShowModal] = useState(false);
   return (
     <><div className="theme-surface w-100 d-flex align-items-center py-5 mb-5" style={{ minHeight: "100vh" }}>
         <div className="container">

@@ -5,8 +5,6 @@ import Navbar from "./components/Navbar.tsx";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import Sobre from "./components/Sobre.tsx";
-import Carosel from "./components/Carosel.tsx";
 import Hero from "./components/Hero.tsx";
 import Cta from "./components/Cta.tsx";
 import Cards from "./components/Cards.tsx";

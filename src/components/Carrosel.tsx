@@ -1,7 +1,4 @@
-import React from 'react';
-
 function Carrosel() {
-
   return (
   <div id="carouselExampleAutoplaying" className="carousel slide theme-surface" data-bs-ride="carousel">
   <div className="carousel-inner">
@@ -15,7 +12,7 @@ function Carrosel() {
       <img src="public/DJES.png" className="d-block" alt="..." style={{ width: '30rem', height: 'auto' }}/>
     </div>
   </div>
-  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <button className="btn theme-button carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
     <span className="visually-hidden">Previous</span>
   </button>
