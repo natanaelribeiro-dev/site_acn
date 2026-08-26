@@ -2,8 +2,8 @@
   return (
     <>
       <header className="container-fluid">
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
-          <button type="button" className="btn" style={{ backgroundColor: "#ff7700", color: "white" }}>
+        <nav className="navbar navbar-expand-lg bg-body-tertiary theme-navbar">
+          <button type="button" className="btn theme-button">
             DJSES
           </button>
           <button
@@ -60,19 +60,16 @@
                   </li>
                 </ul>
               </li>
-            </ul>
-            <form className="d-flex" role="search">
-              <input
-                className="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button className="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
+            </ul>  
           </div>
+          <a className="whasts whasts:hover " href="https://wa.me/5546991264244" target="_blank" title="Chame no whatsapp!" id="bt-areadocliente">
+						<i className="bi bi-whatsapp"></i>
+            <span className="elementor-button-content-wrapper"></span>
+						<span className="elementor-button-icon elementor-align-icon-left">
+						<span className="elementor-button-text"> (46) 99126-4244</span>
+            
+		</span>
+					</a>
         </nav>
       </header>
     </>

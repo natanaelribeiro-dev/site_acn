@@ -1,23 +1,40 @@
 :root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
-  --border: #e5e4e7;
-  --code-bg: #f4f3ec;
-  --accent: #aa3bff;
-  --accent-bg: rgba(170, 59, 255, 0.1);
-  --accent-border: rgba(170, 59, 255, 0.5);
-  --social-bg: rgba(244, 243, 236, 0.5);
-  --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+  color-scheme: light;
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --color-brand: #e85d04;
+  --color-brand-hover: #c94d03;
+  --color-on-brand: #ffffff;
+  --color-background: #ffffff;
+  --color-surface: #ffffff;
+  --color-surface-muted: #f6eee7;
+  --color-text: #27221f;
+  --color-text-muted: #6b625c;
+  --color-border: #e4d8ce;
+  --color-focus: #1769aa;
+  --color-success: #2d7a4b;
+  --color-danger: #b42318;
+  --color-overlay: rgba(39, 34, 31, 0.45);
+  --color-shadow: rgba(39, 34, 31, 0.14);
+
+  /* Compatibility aliases used by the existing components. */
+  --text: var(--color-text-muted);
+  --text-h: var(--color-text);
+  --bg: var(--color-background);
+  --border: var(--color-border);
+  --code-bg: var(--color-surface-muted);
+  --accent: var(--color-brand);
+  --accent-bg: color-mix(in srgb, var(--color-brand) 10%, transparent);
+  --accent-border: color-mix(in srgb, var(--color-brand) 50%, transparent);
+  --social-bg: color-mix(in srgb, var(--color-surface-muted) 55%, transparent);
+  --shadow:
+    var(--color-shadow) 0 10px 15px -3px, var(--color-shadow) 0 4px 6px -2px;
+
+  --sans: system-ui, "Segoe UI", Roboto, sans-serif;
+  --heading: system-ui, "Segoe UI", Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
 
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
-  color-scheme: light dark;
   color: var(--text);
   background: var(--bg);
   font-synthesis: none;
@@ -32,17 +49,23 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #16171d;
-    --border: #2e303a;
-    --code-bg: #1f2028;
-    --accent: #c084fc;
-    --accent-bg: rgba(192, 132, 252, 0.15);
-    --accent-border: rgba(192, 132, 252, 0.5);
-    --social-bg: rgba(47, 48, 58, 0.5);
-    --shadow:
-      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+    color-scheme: dark;
+    --navbar-toggler-filter: invert(1);
+
+    --color-brand: #ff8a3d;
+    --color-brand-hover: #ffad75;
+    --color-on-brand: #24170f;
+    --color-background: #191513;
+    --color-surface: #251f1b;
+    --color-surface-muted: #332a24;
+    --color-text: #fff4eb;
+    --color-text-muted: #d1c1b5;
+    --color-border: #4b3d34;
+    --color-focus: #70b7f0;
+    --color-success: #71c58f;
+    --color-danger: #ff8f85;
+    --color-overlay: rgba(0, 0, 0, 0.65);
+    --color-shadow: rgba(0, 0, 0, 0.4);
   }
 
   #social .button-icon {
@@ -63,6 +86,114 @@
 
 body {
   margin: 0;
+  background: var(--color-background);
+  color: var(--color-text);
+}
+
+.theme-surface {
+  background-color: var(--color-surface) !important;
+  color: var(--color-text);
+}
+
+.bg-light,
+.bg-body-tertiary {
+  background-color: var(--color-surface) !important;
+  color: var(--color-text) !important;
+}
+
+.text-secondary {
+  color: var(--color-text-muted) !important;
+}
+
+.theme-text-muted {
+  color: var(--color-text-muted) !important;
+}
+
+.theme-navbar,
+.theme-navbar .navbar-nav .nav-link,
+.theme-navbar .navbar-brand {
+  color: var(--color-text) !important;
+}
+
+.theme-navbar .navbar-nav .nav-link:hover,
+.theme-navbar .navbar-nav .nav-link:focus,
+.theme-navbar .navbar-nav .nav-link.active {
+  color: var(--color-brand) !important;
+}
+
+.theme-navbar .navbar-toggler {
+  border-color: var(--color-border);
+}
+
+.theme-navbar .navbar-toggler-icon {
+  filter: var(--navbar-toggler-filter, none);
+}
+
+.theme-search-button {
+  border: 1px solid var(--color-brand) !important;
+  color: var(--color-brand) !important;
+}
+
+.theme-search-button:hover,
+.theme-search-button:focus-visible {
+  background-color: var(--color-brand) !important;
+  color: var(--color-on-brand) !important;
+}
+
+.theme-button {
+  background-color: var(--color-brand) !important;
+  border-color: var(--color-brand) !important;
+  color: var(--color-on-brand) !important;
+}
+
+.theme-button:hover,
+.theme-button:focus-visible {
+  background-color: var(--color-brand-hover) !important;
+  border-color: var(--color-brand-hover) !important;
+  color: var(--color-on-brand) !important;
+}
+
+.card,
+.card-header,
+.card-footer,
+.modal-content,
+.dropdown-menu {
+  background-color: var(--color-surface);
+  border-color: var(--color-border);
+  color: var(--color-text);
+}
+
+.card-title,
+.card-text,
+.modal-title,
+.modal-body,
+.modal-footer,
+.dropdown-item {
+  color: var(--color-text);
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: var(--color-surface-muted);
+  color: var(--color-text);
+}
+
+.form-control {
+  background-color: var(--color-surface);
+  border-color: var(--color-border);
+  color: var(--color-text);
+}
+
+.form-control::placeholder {
+  color: var(--color-text-muted);
+}
+
+.form-control:focus {
+  background-color: var(--color-surface);
+  border-color: var(--color-focus);
+  color: var(--color-text);
+  box-shadow: 0 0 0 0.25rem
+    color-mix(in srgb, var(--color-focus) 25%, transparent);
 }
 
 h1,
@@ -107,4 +238,49 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
+}
+
+.whasts {
+    direction: ltr;
+    visibility: visible!important;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    border: 1px solid #3df306;
+    border-radius: 50px;
+    color: #fbfbfc;
+    line-height: 16px;
+    overflow: hidden;
+    padding: 16px 28px;
+    position: relative;
+    text-align: center;
+    transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
+    white-space: pre;
+    z-index: 1;
+    background-color: #25d366;
+    box-shadow: 0 2px 6px rgba(37, 211, 102, 0.18);
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    font-family: WhatsApp Sans Var,sans-serif;
+    font-weight: 400;
+    width: 200px;
+}
+.whasts:hover,
+.whasts:focus-visible {
+  background-color: #25d366;
+  color: #1c1e21;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 12px rgba(37, 211, 102, 0.24);
+}
+
+.whasts:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(37, 211, 102, 0.18);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .whasts {
+    transition: none;
+  }
 }
