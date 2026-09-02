@@ -6,7 +6,6 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./index.css";
 import Hero from "./components/Hero.tsx";
-import Cta from "./components/Cta.tsx";
 import Cards from "./components/Cards.tsx";
 import Footer from "./components/Footer.tsx";
 import Carrosel from "./components/Carrosel.tsx";
