@@ -1,12 +1,12 @@
 function Hero() {
   return (
-    <><div className="theme-surface w-100 d-flex align-items-center py-5 mb-5" style={{ minHeight: "100vh" }}>
+    <><div className="theme-surface hero-section w-100 d-flex align-items-center">
         <div className="container">
           <div className="row align-items-center flex-row-reverse gy-4">
             <div className="col-12 col-lg-5 text-center">
               <img
-                src="public/DJES.png"
-                alt="Hero image"
+                src="/DJES.png"
+                alt="Logo DJES Metalúrgica e Pré-Moldados"
                 className="img-fluid rounded-3 shadow-lg"
                 style={{ maxWidth: "384px" }}
               />
