@@ -8,7 +8,7 @@ function Carrosel() {
       <div className="carousel-inner">
         <div className="carousel-item active">
           <img
-            src="/DJES.png"
+            src={`${import.meta.env.BASE_URL}DJES.png`}
             className="d-block"
             alt="Logo DJES Metalúrgica e Pré-Moldados"
             style={{ width: "30rem", height: "auto" }}
@@ -16,7 +16,7 @@ function Carrosel() {
         </div>
         <div className="carousel-item">
           <img
-            src="/DJES.png"
+            src={`${import.meta.env.BASE_URL}DJES.png`}
             className="d-block"
             alt="Logo DJES Metalúrgica e Pré-Moldados"
             style={{ width: "30rem", height: "auto" }}
@@ -24,7 +24,7 @@ function Carrosel() {
         </div>
         <div className="carousel-item">
           <img
-            src="/DJES.png"
+            src={`${import.meta.env.BASE_URL}DJES.png`}
             className="d-block"
             alt="Logo DJES Metalúrgica e Pré-Moldados"
             style={{ width: "30rem", height: "auto" }}

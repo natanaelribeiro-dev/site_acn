@@ -6,7 +6,7 @@ function Carosel() {
           <div className="row align-items-center flex-row-reverse gy-4">
             <div className="col-12 col-lg-5 text-center">
               <img
-                src="/empresa.webp"
+                src={`${import.meta.env.BASE_URL}empresa.webp`}
                 alt="Equipe e instalações da DJES"
                 className="img-fluid rounded-3 shadow-lg"
                 style={{ maxWidth: "384px" }}
@@ -38,7 +38,7 @@ function Carosel() {
             <div className="card h-100">
               <div className="card-header">
                 <img
-                  src="/empresa.webp"
+                  src={`${import.meta.env.BASE_URL}empresa.webp`}
                   className="card-img-top"
                   alt="ACN"
                 />
@@ -71,7 +71,7 @@ function Carosel() {
             <div className="card h-100">
               <div className="card-header">
                 <img
-                  src="/empresa.webp"
+                  src={`${import.meta.env.BASE_URL}empresa.webp`}
                   className="card-img-top"
                   alt="ACN"
                 />
@@ -102,7 +102,7 @@ function Carosel() {
           <div className="col card">
             <div className="card-header">
               <img
-                src="/empresa.webp"
+                src={`${import.meta.env.BASE_URL}empresa.webp`}
                 className="card-img-top"
                 alt="ACN"
               />
@@ -133,7 +133,7 @@ function Carosel() {
             <div className="card h-100">
               <div className="card-header">
                 <img
-                  src="/empresa.webp"
+                  src={`${import.meta.env.BASE_URL}empresa.webp`}
                   className="card-img-top"
                   alt="ACN"
                 />

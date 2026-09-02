@@ -5,7 +5,7 @@ function Hero() {
           <div className="row align-items-center flex-row-reverse gy-4">
             <div className="col-12 col-lg-5 text-center">
               <img
-                src="/DJES.png"
+                src={`${import.meta.env.BASE_URL}DJES.png`}
                 alt="Logo DJES Metalúrgica e Pré-Moldados"
                 className="img-fluid rounded-3 shadow-lg"
                 style={{ maxWidth: "384px" }}
