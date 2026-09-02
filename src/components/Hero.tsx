@@ -1,6 +1,6 @@
 function Hero() {
   return (
-    <><div className="theme-surface hero-section w-100 d-flex align-items-center">
+    <><div className="theme-surface hero-section w-100 h-80 d-flex align-items-center">
         <div className="container">
           <div className="row align-items-center flex-row-reverse gy-4">
             <div className="col-12 col-lg-5 text-center">

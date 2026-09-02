@@ -93,6 +93,10 @@ body,
   box-sizing: border-box;
 }
 
+header {
+  height: auto;
+}
+
 body {
   margin: 0;
   background: var(--color-background) !important;
@@ -105,10 +109,30 @@ main {
 }
 
 .hero-section {
-  min-height: calc(100svh - 72px);
+  min-height: 100svh;
   box-sizing: border-box;
-  padding: clamp(24px, 5vh, 56px) 0;
   margin-bottom: 0 !important;
+}
+
+.card-group {
+  width: 100%;
+  min-height: 100svh;
+  align-items: stretch;
+}
+
+.card-group .card {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-group .card-img-top {
+  height: 34%;
+  object-fit: cover;
+}
+
+.card-group .card-body {
+  flex: 1;
 }
 
 .cta-scroll-list {
@@ -117,7 +141,7 @@ main {
 
 @media (max-width: 991.98px) {
   .hero-section {
-    min-height: calc(100svh - 62px);
+    min-height: 100svh;
     padding: 40px 0;
   }
 }

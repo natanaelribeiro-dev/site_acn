@@ -2,7 +2,7 @@ function Navbar() {
   return (
     <>
       <header className="w-100 p-0">
-        <nav className="navbar bg-body-tertiary theme-navbar w-100">
+        <nav className="navbar bg-body-tertiary theme-navbar w-100 h-20">
           <div className="container-fluid">
             <a className="btn theme-button" href="#">
               DJSES

@@ -16,10 +16,9 @@ createRoot(document.getElementById("root")!).render(
     <Navbar />
     <main className="w-100 d-flex align-items-center flex-column">
       <Hero />
-      <Carrosel />
       <Cards />
+      <Carrosel />  
       <Footer/>
-      <Cta />
     </main>
   </StrictMode>,
 );
